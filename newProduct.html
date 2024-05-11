@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img id="logo" src="assets/logo.png" alt="logo">
+            <a class="nav-link" href="/index.html">Home</a>
+            <a class="nav-link" href="/newProduct.html">New Product</a>
+        </nav>
+    </header>
+    <div class="product-form">
+        <h2>Add a Product</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="0.01" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="inventory">Inventory:</label>
+                <input type="number" id="inventory" name="inventory" min="0" required>
+            </div>
+            <button type="submit">Create Product</button>
+        </form>
+    </div>
+</body>
